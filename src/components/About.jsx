@@ -36,7 +36,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introdução</p>
-        <p className={styles.sectionHeadText}>Resumo.</p>
+        <h2 className={styles.sectionHeadText}>Resumo.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
@@ -46,7 +46,7 @@ const About = () => {
         Sou leitor, adorador de música. Tenho conhecimento da tecnologia ReactJS, NodeJS, ThreeJS.
       </motion.p>
 
-      <div className="mt-40 flex flex-wrap gap-10">
+      <div className="mt-16 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
